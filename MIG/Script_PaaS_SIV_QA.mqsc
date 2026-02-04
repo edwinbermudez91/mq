@@ -1,0 +1,187 @@
+DELETE QREMOTE(SBSIVCI004.REQ)
+DELETE QREMOTE(SBSIVCO001.REQ)
+DELETE QREMOTE(SBSIVDM001.REQ)
+DELETE QREMOTE(SBSIVEF001.REQ)
+DELETE QREMOTE(SBSIVET003.REQ)
+DELETE QREMOTE(SBSIVET004.REQ)
+DELETE QREMOTE(SBSIVFN001.REQ)
+DELETE QREMOTE(SBSIVMV001.REQ)
+DELETE QREMOTE(SBSIVMV003.REQ)
+DELETE QREMOTE(SBSIVPO001.REQ)
+DELETE QREMOTE(SBSIVST001.REQ)
+
+DEFINE QALIAS('SBSIVCI004.REQ')  +
+       TARGTYPE(QUEUE)  +
+       CLWLRANK(0)  +
+       CLWLPRTY(0)  +
+       TARGET('EAI_TO_SIV_ADP.REQ')  +
+       DEFPRTY(0)  +
+       DEFPSIST(NO)  +
+       DEFPRESP(SYNC)  +
+       DEFREADA(NO)  +
+       DEFBIND(OPEN)  +
+       PUT(ENABLED)  +
+       GET(ENABLED)  +
+       SCOPE(QMGR)  +
+       PROPCTL(COMPAT)  +
+       REPLACE
+
+DEFINE QALIAS('SBSIVCO001.REQ')  +
+       TARGTYPE(QUEUE)  +
+       CLWLRANK(0)  +
+       CLWLPRTY(0)  +
+       TARGET('EAI_TO_SIV_ADP.REQ')  +
+       DEFPRTY(0)  +
+       DEFPSIST(NO)  +
+       DEFPRESP(SYNC)  +
+       DEFREADA(NO)  +
+       DEFBIND(OPEN)  +
+       PUT(ENABLED)  +
+       GET(ENABLED)  +
+       SCOPE(QMGR)  +
+       PROPCTL(COMPAT)  +
+       REPLACE
+
+
+DEFINE QALIAS('SBSIVDM001.REQ')  +
+       TARGTYPE(QUEUE)  +
+       CLWLRANK(0)  +
+       CLWLPRTY(0)  +
+       TARGET('EAI_TO_SIV_ADP.REQ')  +
+       DEFPRTY(0)  +
+       DEFPSIST(NO)  +
+       DEFPRESP(SYNC)  +
+       DEFREADA(NO)  +
+       DEFBIND(OPEN)  +
+       PUT(ENABLED)  +
+       GET(ENABLED)  +
+       SCOPE(QMGR)  +
+       PROPCTL(COMPAT)  +
+       REPLACE
+
+DEFINE QALIAS('SBSIVEF001.REQ')  +
+       TARGTYPE(QUEUE)  +
+       CLWLRANK(0)  +
+       CLWLPRTY(0)  +
+       TARGET('EAI_TO_SIV_ADP.REQ')  +
+       DEFPRTY(0)  +
+       DEFPSIST(NO)  +
+       DEFPRESP(SYNC)  +
+       DEFREADA(NO)  +
+       DEFBIND(OPEN)  +
+       PUT(ENABLED)  +
+       GET(ENABLED)  +
+       SCOPE(QMGR)  +
+       PROPCTL(COMPAT)  +
+       REPLACE
+
+DEFINE QALIAS('SBSIVET003.REQ')  +
+       TARGTYPE(QUEUE)  +
+       CLWLRANK(0)  +
+       CLWLPRTY(0)  +
+       TARGET('EAI_TO_SIV_ADP.REQ')  +
+       DEFPRTY(0)  +
+       DEFPSIST(NO)  +
+       DEFPRESP(SYNC)  +
+       DEFREADA(NO)  +
+       DEFBIND(OPEN)  +
+       PUT(ENABLED)  +
+       GET(ENABLED)  +
+       SCOPE(QMGR)  +
+       PROPCTL(COMPAT)  +
+       REPLACE
+
+DEFINE QALIAS('SBSIVET004.REQ')  +
+       TARGTYPE(QUEUE)  +
+       CLWLRANK(0)  +
+       CLWLPRTY(0)  +
+       TARGET('EAI_TO_SIV_ADP.REQ')  +
+       DEFPRTY(0)  +
+       DEFPSIST(NO)  +
+       DEFPRESP(SYNC)  +
+       DEFREADA(NO)  +
+       DEFBIND(OPEN)  +
+       PUT(ENABLED)  +
+       GET(ENABLED)  +
+       SCOPE(QMGR)  +
+       PROPCTL(COMPAT)  +
+       REPLACE
+
+DEFINE QALIAS('SBSIVFN001.REQ')  +
+       TARGTYPE(QUEUE)  +
+       CLWLRANK(0)  +
+       CLWLPRTY(0)  +
+       TARGET('EAI_TO_SIV_ADP.REQ')  +
+       DEFPRTY(0)  +
+       DEFPSIST(NO)  +
+       DEFPRESP(SYNC)  +
+       DEFREADA(NO)  +
+       DEFBIND(OPEN)  +
+       PUT(ENABLED)  +
+       GET(ENABLED)  +
+       SCOPE(QMGR)  +
+       PROPCTL(COMPAT)  +
+       REPLACE
+DEFINE QALIAS('SBSIVMV001.REQ')  +
+       TARGTYPE(QUEUE)  +
+       CLWLRANK(0)  +
+       CLWLPRTY(0)  +
+       TARGET('EAI_TO_SIV_ADP.REQ')  +
+       DEFPRTY(0)  +
+       DEFPSIST(NO)  +
+       DEFPRESP(SYNC)  +
+       DEFREADA(NO)  +
+       DEFBIND(OPEN)  +
+       PUT(ENABLED)  +
+       GET(ENABLED)  +
+       SCOPE(QMGR)  +
+       PROPCTL(COMPAT)  +
+       REPLACE
+
+DEFINE QALIAS('SBSIVMV003.REQ')  +
+       TARGTYPE(QUEUE)  +
+       CLWLRANK(0)  +
+       CLWLPRTY(0)  +
+       TARGET('EAI_TO_SIV_ADP.REQ')  +
+       DEFPRTY(0)  +
+       DEFPSIST(NO)  +
+       DEFPRESP(SYNC)  +
+       DEFREADA(NO)  +
+       DEFBIND(OPEN)  +
+       PUT(ENABLED)  +
+       GET(ENABLED)  +
+       SCOPE(QMGR)  +
+       PROPCTL(COMPAT)  +
+       REPLACE
+	   
+DEFINE QALIAS('SBSIVPO001.REQ')  +
+       TARGTYPE(QUEUE)  +
+       CLWLRANK(0)  +
+       CLWLPRTY(0)  +
+       TARGET('EAI_TO_SIV_ADP.REQ')  +
+       DEFPRTY(0)  +
+       DEFPSIST(NO)  +
+       DEFPRESP(SYNC)  +
+       DEFREADA(NO)  +
+       DEFBIND(OPEN)  +
+       PUT(ENABLED)  +
+       GET(ENABLED)  +
+       SCOPE(QMGR)  +
+       PROPCTL(COMPAT)  +
+       REPLACE
+
+DEFINE QALIAS('SBSIVST001.REQ')  +
+       TARGTYPE(QUEUE)  +
+       CLWLRANK(0)  +
+       CLWLPRTY(0)  +
+       TARGET('EAI_TO_SIV_ADP.REQ')  +
+       DEFPRTY(0)  +
+       DEFPSIST(NO)  +
+       DEFPRESP(SYNC)  +
+       DEFREADA(NO)  +
+       DEFBIND(OPEN)  +
+       PUT(ENABLED)  +
+       GET(ENABLED)  +
+       SCOPE(QMGR)  +
+       PROPCTL(COMPAT)  +
+       REPLACE

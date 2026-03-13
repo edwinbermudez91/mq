@@ -1,0 +1,266 @@
+DELETE QREMOTE(SBRFCCI005.REQ)
+DELETE QREMOTE(SBRFCSW002.REQ)
+DELETE QREMOTE(SBRFCSW003.REQ)
+DELETE QREMOTE(SBRFCRE006.REQ)
+DELETE QREMOTE(MWAS.RREQ.REQ)
+DELETE QREMOTE(MWAS.RREQ.REQ1)
+DELETE QREMOTE(SWFT101FATES.REQ)
+DELETE QREMOTE(SWFT101FILFATES.REQ)
+DELETE QREMOTE(SWFT101KACFATES.REQ)
+
+
+DEFINE QLOCAL('MWAS.RREQ.REQ1')  +
+       CLWLRANK(0)  +
+       CLWLPRTY(0)  +
+       CLWLUSEQ(QMGR)  +
+       MAXDEPTH(500000)  +
+       MAXMSGL(4194304)  +
+       USAGE(NORMAL)  +
+       DEFPRTY(0)  +
+       DEFPSIST(NO)  +
+       DEFPRESP(SYNC)  +
+       DEFREADA(NO)  +
+       NPMCLASS(NORMAL)  +
+       DEFBIND(OPEN)  +
+       MSGDLVSQ(PRIORITY)  +
+       PUT(ENABLED)  +
+       GET(ENABLED)  +
+       HARDENBO  +
+       BOTHRESH(0)  +
+       SHARE  +
+       DEFSOPT(SHARED)  +
+       RETINTVL(999999999)  +
+       NOTRIGGER  +
+       TRIGTYPE(FIRST)  +
+       TRIGMPRI(0)  +
+       TRIGDPTH(1)  +
+       SCOPE(QMGR)  +
+       QDEPTHHI(80)  +
+       QDEPTHLO(20)  +
+       QDPMAXEV(ENABLED)  +
+       QDPHIEV(DISABLED)  +
+       QDPLOEV(DISABLED)  +
+       QSVCINT(999999999)  +
+       QSVCIEV(NONE)  +
+       DISTL(NO)  +
+       STATQ(QMGR)  +
+       ACCTQ(QMGR)  +
+       MONQ(QMGR)  +
+       PROPCTL(COMPAT)  +
+       REPLACE
+	   
+DEFINE QLOCAL('MWAS.RREQ.REQ')  +
+       CLWLRANK(0)  +
+       CLWLPRTY(0)  +
+       CLWLUSEQ(QMGR)  +
+       MAXDEPTH(500000)  +
+       MAXMSGL(4194304)  +
+       USAGE(NORMAL)  +
+       DEFPRTY(0)  +
+       DEFPSIST(NO)  +
+       DEFPRESP(SYNC)  +
+       DEFREADA(NO)  +
+       NPMCLASS(NORMAL)  +
+       DEFBIND(OPEN)  +
+       MSGDLVSQ(PRIORITY)  +
+       PUT(ENABLED)  +
+       GET(ENABLED)  +
+       HARDENBO  +
+       BOTHRESH(0)  +
+       SHARE  +
+       DEFSOPT(SHARED)  +
+       RETINTVL(999999999)  +
+       NOTRIGGER  +
+       TRIGTYPE(FIRST)  +
+       TRIGMPRI(0)  +
+       TRIGDPTH(1)  +
+       SCOPE(QMGR)  +
+       QDEPTHHI(80)  +
+       QDEPTHLO(20)  +
+       QDPMAXEV(ENABLED)  +
+       QDPHIEV(DISABLED)  +
+       QDPLOEV(DISABLED)  +
+       QSVCINT(999999999)  +
+       QSVCIEV(NONE)  +
+       DISTL(NO)  +
+       STATQ(QMGR)  +
+       ACCTQ(QMGR)  +
+       MONQ(QMGR)  +
+       PROPCTL(COMPAT)  +
+       REPLACE
+	   
+DEFINE QREMOTE('SBRFCCI005.REQ')  +
+       CLWLRANK(0)  +
+       CLWLPRTY(0)  +
+       RNAME('EAITORFC.REQ')  +
+       RQMNAME('RFC01.P.QM')  +
+       XMITQ('RFC01.P.XQ')  +
+       DEFPRTY(0)  +
+       DEFPSIST(NO)  +
+       DEFPRESP(SYNC)  +
+       DEFBIND(OPEN)  +
+       PUT(ENABLED)  +
+       SCOPE(QMGR)  +
+       REPLACE
+	   
+DEFINE QREMOTE('SBRFCSW002.REQ')  +
+       CLWLRANK(0)  +
+       CLWLPRTY(0)  +
+       RNAME('EAITORFC.REQ')  +
+       RQMNAME('RFC01.P.QM')  +
+       XMITQ('RFC01.P.XQ')  +
+       DEFPRTY(0)  +
+       DEFPSIST(NO)  +
+       DEFPRESP(SYNC)  +
+       DEFBIND(OPEN)  +
+       PUT(ENABLED)  +
+       SCOPE(QMGR)  +
+       REPLACE
+	   
+DEFINE QREMOTE('SBRFCSW003.REQ')  +
+       CLWLRANK(0)  +
+       CLWLPRTY(0)  +
+       RNAME('EAITORFC.REQ')  +
+       RQMNAME('RFC01.P.QM')  +
+       XMITQ('RFC01.P.XQ')  +
+       DEFPRTY(0)  +
+       DEFPSIST(NO)  +
+       DEFPRESP(SYNC)  +
+       DEFBIND(OPEN)  +
+       PUT(ENABLED)  +
+       SCOPE(QMGR)  +
+       REPLACE
+	   
+DEFINE QREMOTE('SBRFCRE006.REQ')  +
+       CLWLRANK(0)  +
+       CLWLPRTY(0)  +
+       RNAME('EAITORFC.REQ')  +
+       RQMNAME('RFC01.P.QM')  +
+       XMITQ('RFC01.P.XQ')  +
+       DEFPRTY(0)  +
+       DEFPSIST(NO)  +
+       DEFPRESP(SYNC)  +
+       DEFBIND(OPEN)  +
+       PUT(ENABLED)  +
+       SCOPE(QMGR)  +
+       REPLACE
+ 
+DEFINE QLOCAL('SWFT101FATES.REQ')  +
+       CLWLRANK(0)  +
+       CLWLPRTY(0)  +
+       CLWLUSEQ(QMGR)  +
+       MAXDEPTH(5000)  +
+       MAXMSGL(4194304)  +
+       USAGE(NORMAL)  +
+       DEFPRTY(0)  +
+       DEFPSIST(NO)  +
+       DEFPRESP(SYNC)  +
+       DEFREADA(NO)  +
+       NPMCLASS(NORMAL)  +
+       DEFBIND(OPEN)  +
+       MSGDLVSQ(PRIORITY)  +
+       PUT(ENABLED)  +
+       GET(ENABLED)  +
+       HARDENBO  +
+       BOTHRESH(0)  +
+       SHARE  +
+       DEFSOPT(SHARED)  +
+       RETINTVL(999999999)  +
+       NOTRIGGER  +
+       TRIGTYPE(FIRST)  +
+       TRIGMPRI(0)  +
+       TRIGDPTH(1)  +
+       SCOPE(QMGR)  +
+       QDEPTHHI(80)  +
+       QDEPTHLO(20)  +
+       QDPMAXEV(ENABLED)  +
+       QDPHIEV(DISABLED)  +
+       QDPLOEV(DISABLED)  +
+       QSVCINT(999999999)  +
+       QSVCIEV(NONE)  +
+       DISTL(NO)  +
+       STATQ(QMGR)  +
+       ACCTQ(QMGR)  +
+       MONQ(QMGR)  +
+       PROPCTL(COMPAT)  +
+       REPLACE
+
+DEFINE QLOCAL('SWFT101FILFATES.REQ')  +
+       CLWLRANK(0)  +
+       CLWLPRTY(0)  +
+       CLWLUSEQ(QMGR)  +
+       MAXDEPTH(5000)  +
+       MAXMSGL(4194304)  +
+       USAGE(NORMAL)  +
+       DEFPRTY(0)  +
+       DEFPSIST(NO)  +
+       DEFPRESP(SYNC)  +
+       DEFREADA(NO)  +
+       NPMCLASS(NORMAL)  +
+       DEFBIND(OPEN)  +
+       MSGDLVSQ(PRIORITY)  +
+       PUT(ENABLED)  +
+       GET(ENABLED)  +
+       HARDENBO  +
+       BOTHRESH(0)  +
+       SHARE  +
+       DEFSOPT(SHARED)  +
+       RETINTVL(999999999)  +
+       NOTRIGGER  +
+       TRIGTYPE(FIRST)  +
+       TRIGMPRI(0)  +
+       TRIGDPTH(1)  +
+       SCOPE(QMGR)  +
+       QDEPTHHI(80)  +
+       QDEPTHLO(20)  +
+       QDPMAXEV(ENABLED)  +
+       QDPHIEV(DISABLED)  +
+       QDPLOEV(DISABLED)  +
+       QSVCINT(999999999)  +
+       QSVCIEV(NONE)  +
+       DISTL(NO)  +
+       STATQ(QMGR)  +
+       ACCTQ(QMGR)  +
+       MONQ(QMGR)  +
+       PROPCTL(COMPAT)  +
+       REPLACE
+
+DEFINE QLOCAL('SWFT101KACFATES.REQ')  +
+       CLWLRANK(0)  +
+       CLWLPRTY(0)  +
+       CLWLUSEQ(QMGR)  +
+       MAXDEPTH(5000)  +
+       MAXMSGL(4194304)  +
+       USAGE(NORMAL)  +
+       DEFPRTY(0)  +
+       DEFPSIST(NO)  +
+       DEFPRESP(SYNC)  +
+       DEFREADA(NO)  +
+       NPMCLASS(NORMAL)  +
+       DEFBIND(OPEN)  +
+       MSGDLVSQ(PRIORITY)  +
+       PUT(ENABLED)  +
+       GET(ENABLED)  +
+       HARDENBO  +
+       BOTHRESH(0)  +
+       SHARE  +
+       DEFSOPT(SHARED)  +
+       RETINTVL(999999999)  +
+       NOTRIGGER  +
+       TRIGTYPE(FIRST)  +
+       TRIGMPRI(0)  +
+       TRIGDPTH(1)  +
+       SCOPE(QMGR)  +
+       QDEPTHHI(80)  +
+       QDEPTHLO(20)  +
+       QDPMAXEV(ENABLED)  +
+       QDPHIEV(DISABLED)  +
+       QDPLOEV(DISABLED)  +
+       QSVCINT(999999999)  +
+       QSVCIEV(NONE)  +
+       DISTL(NO)  +
+       STATQ(QMGR)  +
+       ACCTQ(QMGR)  +
+       MONQ(QMGR)  +
+       PROPCTL(COMPAT)  +
+       REPLACE
